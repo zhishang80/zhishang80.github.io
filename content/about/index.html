@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="personal website">
+    <meta name="author" content="zhi shang">
+    <title>Zhi Shang Website</title>
+    <!-- style css -->
+    <link type="text/css" href="../../css/index.css" rel="stylesheet">
+    <link type="text/css" href="css/index.css" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link type="text/css" href="../../bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" herf="../../bootstrap5/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Bootstrap js -->
+    <script src="../../bootstrap5/js/bootstrap.min.js"></script>
+    <!-- JQuery js -->
+    <script src="../../jquery/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="bg-warning">
+    <Div class="container-sm">
+        <nav class="row mt-auto mb-auto bg-info">
+            <div class="navbar navbar-expand-sm navbar-light bg-info">
+                <a class="navbar-brand nav-link text-primary" id="navbarTexts" href="../../index.html">
+                    Zhi Shang
+                    <object type="image/svg+xml" data="../../bootstrap5/icon/person.svg"></object>
+                </a>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <aside class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-0">
+                        <li class="nav-item ms-md-3 ps-3">
+                            <a class="nav-link text-primary fw-bolder" href="../research/index.html">
+                                Research
+                                <object type="image/svg+xml" data="../../bootstrap5/icon/laptop.svg"></object>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-md-3 ps-3">
+                            <a class="nav-link text-primary fw-bolder" href="../cv/index.html">
+                                CV
+                                <object type="image/svg+xml" data="../../bootstrap5/icon/eye.svg"></object>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-md-3 ps-3">
+                            <a class="nav-link text-primary fw-bolder" href="../contact/index.html">
+                                Contact
+                                <object type="image/svg+xml" data="../../bootstrap5/icon/envelope.svg"></object>
+                            </a>
+                        </li>
+                    </ul>
+                    <section class="navbar-nav mb-0 ms-md-3 ps-3">
+                        <a class="nav-link text-white disabled" href="../about/index.html">
+                            About
+                            <object style="width: 16px;height: 16px;" type="image/svg+xml"
+                                data="../../bootstrap5/icon/info-circle.svg" class="ms-1"></object>
+                        </a>
+                    </section>
+                </aside>
+            </div>
+        </nav>
+        <section class="row bg-secondary">
+            <section class="col-sm-6">
+                <p class="btn btn-danger btn-lg mt-sm-1 mb-sm-0 fw-bolder disabled">Technical skills:</p>
+                <div class="mb-sm-0">
+                    <div class="text-dark"><span class="text-white">CAD geometry tool:</span> Solidworks, CATIA,
+                        Unigraphics, AutoCAD, Salome, Blender.
+                    </div>
+                    <div class="text-dark"><span class="text-white">CFD pre-processing tool:</span> ICEM-CFD,
+                        snappyHexMesh,
+                        Pointwise, Salome, GiD, Gmsh.
+                    </div>
+                    <div class="text-dark"><span class="text-white">CFD solver tool:</span> OpenFOAM, FLUENT, CFX,
+                        STAR-CD,
+                        STAR-CCM+, Code_Saturne,
+                        Telemac-2D, Telemac-3D.</div>
+                    <div class="text-dark"><span class="text-white">CFD post-processing tool:</span> Paraview, Tecplot,
+                        EnSight, FieldView, VisIt, Maya,
+                        Blender, Matplotlib.</div>
+                    <div class="text-dark"><span class="text-white">Earth system models (ESMs):</span> CESM, WRF, ROMS,
+                        Reginal Coupled CESM (RCESM).</div>
+                    <div class="text-dark"><span class="text-white">Parallel programming:</span> MPI, OpenMP, OpenACC
+                        and
+                        CUDA (GPUs), Vectorization (MICs).
+                    </div>
+                    <div class="text-dark"><span class="text-white">High performance computing:</span> Valgrind, Perf,
+                        IPM,
+                        VTune, TAU, TotalView.</div>
+                    <div class="text-dark"><span class="text-white">Scientific computational languages:</span> C++, C,
+                        Fortran, Matlab, Python, Julia.</div>
+                    <div class="text-dark"><span class="text-white">Operating systems and Website programming:</span>
+                        Linux,
+                        Windows, HTML/CSS/JavaScript,
+                        PHP, MySQL.</div>
+                </div>
+            </section>
+            <section class="col-sm-6">
+                <h4 class="btn btn-danger btn-lg mt-sm-1 mb-sm-0 fw-bolder disabled">CFD:</h4>
+                <div class="mb-sm-0">
+                    <div class="text-dark">Multiphase flow modeling of Mixture, Euler-Euler and
+                        Eulerian-Lagrangian approaches.</div>
+                    <div class="text-dark">Interface dynamics and phase change using VOF, Level Set and
+                        CLSVOF with heat transfer.</div>
+                    <div class="text-dark">Discrete phase modeling with DPM (discrete particle model) and
+                        DEM (discrete element method).</div>
+                    <div class="text-dark">Multi-physics simulations through FSI (fluid-structure
+                        interaction) and LBM (lattice Boltzmann method).</div>
+                    <div class="text-dark">Hypersonic (shock wave capture) and rarefied flows (3D
+                        DSMC-direct simulation Monte Carlo).</div>
+                </div>
+            </section>
+
+            <section class="row m-auto">
+                <h4 class="btn btn-danger btn-lg mt-sm-1 mb-sm-0 fw-bolder disabled">HPC:</h4>
+                <div class="text-warning">
+                    Parallel Programming using MPI (spmd), OpenMP (spmt), OpenACC and CUDA (GPUs), vectorization (simd).
+                </div>
+                <div class="col-sm-6 mb-0">
+                    <p class="text-white"><strong>C++</strong> object-oriented design (OOD) manufactory model for Cuda
+                        GPU object-oriented programming (OOP) framework
+                    </p>
+                    <pre class="pre-xy-scrollable text-dark">
+#include&lt;iostream&gt;
+#include&lt;cuda.h&gt;
+#include&lt;cuda_runtime.h&gt;
+#include&lt;sys/time.h&gt;
+
+const int IMAX{1000}, JMAX{1000}, KMAX{1000};
+
+struct fnode{...};
+struct macronode{...};
+
+class cudaRun {
+public:
+    cudaRun() {};
+    virtual ~cudaRun() {};
+    virtual void run() const = 0 {};
+    void init(){
+        cudaMallocManaged((void **) &buf_macro, IMAX*JMAX*KMAX*sizeof(macronode));
+        cudaMallocManaged((void **) &buf_f, IMAX*JMAX*KMAX*sizeof(fnode));
+        cudaMallocManaged((void **) &buf_isnode, IMAX*JMAX*KMAX*sizeof(int));
+    }
+private:
+    fnode 3D_array;
+}
+
+class cudaNoshare: public cudaRun {
+public:
+    __global__ void kernel(int *isnode, fnode *buf_f, macronode *buf_macro, srtpara para, int imax, int
+    jmax, int kmax) {
+        ...
+    }
+    virtual void run() const{
+        kernel&lt;&lt;&lt;grid, block&gt;&gt;&gt;(buf_isnode, buf_f, buf_macro, bufh_para, IMAX, JMAX, KMAX);
+        ...
+    }
+}
+
+class cudaShare: public cudaRun {
+public:
+    __global__ void kernel(int *isnode, fnode *buf_f, macronode *buf_macro, srtpara para, int imax, int
+                            jmax, int kmax) {
+        ...
+    }
+    virtual void run const() {
+        kernel&lt;&lt;&lt;grid, block&gt;&gt;&gt;(buf_isnode, buf_f, buf_macro, bufh_para, IMAX, JMAX, KMAX);
+        ...
+    }
+}
+
+class cudaStream: public cudaRun {
+public:
+    __global__ void kernel(int *isnode, fnode *buf_f, macronode *buf_macro, srtpara para, int imax,
+                           int jmax, int kmax){
+        ...
+    }
+    virtual void run() const {
+        kernel&lt;&lt;&lt;grid, block, 0, stream&gt;&gt;&gt;(buf_isnode, buf_f, buf_macro, bufh_para, IMAX, JMAX, KMAX);
+        ...
+    }
+}
+
+int main(void) {
+    cudaRun *gpuRun = new cudaNoshare();
+    //cudaRun *gpuRun = new cudaShare();
+    //cudaRun *gpuRun = new cudaStream();
+    gpuRun->init();
+    gpuRun->run();
+    return 0;
+}
+
+                    </pre>
+                </div>
+                <div class="col-sm-6 mb-0">
+                    <p class="text-white"><strong>Fortran</strong> object-oriented design (OOD) manufactory model for
+                        Cuda GPU object-oriented programming (OOP) framework
+                    </p>
+                    <pre class="pre-xy-scrollable text-dark">
+PROGRAM MAIN
+    use mod_cudaInit
+    use mod_cudaRun
+    implicit none
+    type(cudaInit), pointer :: gpuInit
+    type(cudaNoshare), pointer :: gpuNoshare
+    type(cudaShare), pointer :: gpuShare
+    type(cudaStream), pointer :: gpuStream
+
+    class(cudaRun), pointer :: gpuRun
+
+    allocate(gpuNoshare)
+    allocate(gpuShare)
+    allocate(gpuStream)
+
+    gpuRun => cudaNoshare
+    ! gpuRun => cudaShare
+    ! gpuRun => cudaStream
+
+    call gpuInit % init()
+    call gpuRun % run()
+END PROGRAM
+
+module mod_cudaInit
+    use mod...
+    implicit none
+    type, public :: cudaInit
+    contains
+    procedure(data_init) :: init
+    end type cudaInit
+
+    contains
+    subroutine data_init(this)
+    ...
+    end subroutine init
+end module mod_cudaInit
+
+module mod_cudaRun
+    use mod_cudaInit
+    implicit none
+    type, abstract, public :: cudaRun
+        contains
+        procedure(abs_run), deferred :: run
+    end type cudaRun
+    !-----------------------
+    abstract interface
+        subroutine abs_run(this)
+        ...
+        end subroutine abs_run
+    end interface
+end module mod_cudaRun
+
+module mod_cudaNoshare
+    use cudafor
+    use cudaInit
+    use mod_cudaRun
+    implicit none
+    type, extends(cudaRun), public :: cudaNoshare
+    procedure :: run => no_share_run
+    end type cudaRun
+    !===============
+    private :: no_share_run
+    contains
+    attributes(global) subroutine kernel(int *isnode, fnode *buf_f, macronode *buf_macro, srtpara para, &
+    int imax, int jmax, int kmax)
+    ...
+    end subroutine kernel
+    subroutine no_share_run()
+        call kernel&lt;&lt;&lt;grid, block&gt;&gt;&gt;(buf_isnode, buf_f, buf_macro, bufh_para, IMAX, JMAX, KMAX)
+    end subroutine no_share_run
+end module mod_cudaNoshare
+
+module mod_cudaShare
+    ...
+end module mod_cudaShare
+
+module mod_cudaStream
+    ...
+end module mod_cudaStream
+                    </pre>
+                </div>
+            </section>
+
+            <section class="row m-auto mt-0 mb-0 table-responsive">
+                <p class="btn btn-danger btn-lg mt-sm-1 mb-sm-0 fw-bolder disabled">GitHub:</p>
+                <table class="table table-bordered mt-0">
+                    <tbody>
+                        <tr class="bg-secondary">
+                            <td class="text-white">CFD</td>
+                            <td class="text-dark">Lattice Boltzmann method for computational fluid dynamics with BGK and
+                                MRT collision model</td>
+                            <td class="text-white">C++</td>
+                            <td>
+                                <a class="text-decoration-none text-warning"
+                                    href="https://github.com/zhishang80/OpenLBM" target="_blank">
+                                    https://github.com/zhishang80/OpenLBM
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-success">
+                            <td class="text-white">MPI</td>
+                            <td class="text-dark">Finite difference method for heat transfer with MPI-2 parallel I/O and
+                                MPI-3 neighborhood collectives</td>
+                            <td class="text-white">Fortran</td>
+                            <td>
+                                <a class="text-decoration-none text-warning"
+                                    href="https://github.com/zhishang80/HeatTransfer" target="_blank">
+                                    https://github.com/zhishang80/HeatTransfer
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-warning">
+                            <td class="text-white">Hybrid OpenMP/OpenACC/MPI</td>
+                            <td class="text-dark">Hybrid OpenMP/MPI with OpenMP-2,3,4 under MPI thread initializing;
+                                Hybrid OpenACC/MPI with multiple GPUs and OpenMP</td>
+                            <td class="text-white">C</td>
+                            <td>
+                                <a class="text-decoration-none text-primary"
+                                    href="https://github.com/zhishang80/MatrixMulMatrix_MPI" target="_blank">
+                                    https://github.com/zhishang80/MatrixMulMatrix_MPI
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-primary">
+                            <td class="text-white">Hybrid Cuda/MPI</td>
+                            <td class="text-dark">Hybrid Cuda/MPI with non-shared and shared GPU memory usage</td>
+                            <td class="text-white">Cuda</td>
+                            <td>
+                                <a class="text-decoration-none text-warning"
+                                    href="https://github.com/zhishang80/MatrixMulMatrix_Cuda_MPI" target="_blank">
+                                    https://github.com/zhishang80/MatrixMulMatrix_Cuda_MPI
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-danger">
+                            <td class="text-white">Python/OpenFOAM</td>
+                            <td class="text-dark">Python picking up the residuals from OpenFOAM log output file and
+                                drawing the residual curves</td>
+                            <td class="text-white">Python</td>
+                            <td>
+                                <a class="text-decoration-none text-warning"
+                                    href="https://github.com/zhishang80/Python_OpenFOAM_process" target="_blank">
+                                    https://github.com/zhishang80/Python_OpenFOAM_process
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </Div>
+</body>
+
+</html>

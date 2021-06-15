@@ -1,0 +1,79 @@
+.bear {
+  width: 200px;
+  height: 120px;
+  background: url(../image/running_bear.png) no-repeat;
+  animation: bear 1s steps(8) infinite;
+}
+
+@keyframes bear {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -1600px;
+  }
+}
+
+.cfd {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  border-top: 6px solid skyblue;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 100px;
+  text-align: center;
+  animation: rotation 2s linear 0s infinite normal both;
+}
+
+.hpc {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  border-top: 6px solid skyblue;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 100px;
+  text-align: center;
+  animation: rotation 2s linear 0s infinite normal both;
+}
+
+.cfd span,
+.hpc span {
+  display: inline-block;
+  animation: rotation 2s linear 0s infinite reverse both;
+}
+
+.cfd::before,
+.hpc::before,
+.cfd::after,
+.hpc::after {
+  content: " ";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  border-top: 6px solid lightpink;
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transform: rotate(120deg);
+}
+
+.cfd::after,
+.hpc::after {
+  transform: rotate(240deg);
+  border-color: lightcoral;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
