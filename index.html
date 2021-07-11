@@ -16,6 +16,8 @@
     <script src="bootstrap5/js/bootstrap.min.js"></script>
     <!-- JQuery js -->
     <script src="jquery/jquery-3.6.0.min.js"></script>
+    <!-- Vue js -->
+    <script src="vue/vue-2.6.14.min.js"></script>
 </head>
 
 <body class="bg-info">
@@ -154,8 +156,8 @@
                                 </tr>
                                 <tr>
                                     <td class="text-white" style="padding-left: 1rem">
-                                        Website (HTML5, CSS3, JavaScript, Bootstrap5, JQuery, VUE, React, Angular, AJAX
-                                        ...)
+                                        Website (HTML5, CSS3, JavaScript, TypeScript, Bootstrap5, JQuery, VUE, React,
+                                        Angular, AJAX ...)
                                     </td>
                                 </tr>
                             </table>
@@ -211,16 +213,17 @@
                         </td>
                         <th scope="row" class="fw-bold text-white bg-primary">&starf;</th>
                         <td class="fw-bolder text-dark bg-secondary">
-                            Extra methodology developer
+                            Extra methodology developer and engineer
                             <table class="table table-borderless table-sm mb-0 fw-normal text-dark fs-6">
                                 <tr>
                                     <td class="text-white" style="padding-left: 1rem">
-                                        Meshless method
+                                        Machine Learning, Deep Learning, Numpy, Scipy, Pandas, Matplotlib, Scikit-learn,
+                                        TensorFlow ...
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="text-white" style="padding-left: 1rem">
-                                        Adaptive meshing technology
+                                        Adaptive meshing technology, Meshless methods
                                     </td>
                                 </tr>
                                 <tr>
@@ -235,8 +238,8 @@
             </table>
         </main>
         <section class="row bg-warning">
-            <div class="dcarousel m-auto mt-4 mb-4">
-                <section class="carousels m-auto rounded-pill">
+            <div class="dcarousel mt-4 mb-4" id="vueRoot">
+                <section class="carousels m-auto rounded-pill" :class="flag?carouselsRight:carouselsLeft">
                     <div class="rounded-pill"></div>
                     <div class="rounded-pill"></div>
                     <div class="rounded-pill"></div>
@@ -249,15 +252,40 @@
                     <div class="rounded-pill"></div>
                     <div class="rounded-pill"></div>
                 </section>
+
+                <button class="carousel-control-prev" type="button" @click="left">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" @click="right">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
-        <footer class="footer footer-box mt-auto mb-auto">
+        <footer class="footer footer-box m-auto">
             <p class="float-end mt-2 mb-2"><a href="/">Back to top</a></p>
             <p class="float-start mt-2 mb-2 text-dark">
                 Copyright &copy; 2021, Personal website &reg;, Rights reserved &forall;
             </p>
         </footer>
     </Div>
+    <script>
+        let vue = new Vue({
+            el: "#vueRoot",
+            data: {
+                flag: true,
+                carouselsLeft: "carouselsLeft",
+                carouselsRight: "carouselsRight"
+            },
+            methods: {
+                left() {
+                    this.flag = true
+                },
+                right() {
+                    this.flag = false
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
