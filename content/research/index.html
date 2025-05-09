@@ -219,42 +219,49 @@
 			<!--3rd slide-->
 			<div class="col-md-4 mt-2">
 				<div class="card">
-					<img class="card-img-top" style="width: 100%; height: 400px;" src="image/propellervof.gif"
-						alt="FSI image">
+					<img class="card-img-top" style="width: 100%; height: 400px;" src="image/amma.gif
+						alt=" large image">
 					<div class="card-body">
-						<h4 class="card-title">Multiphase flow in FSI</h4>
-						<p class="card-text">The multiphase flow solver was developed using C++ for OpenFOAM.
-						</p>
+						<h4 class="card-title">CFD simulations on Ammonia Gas Dispersion and Absorption by Water Curtain
+						</h4>
+						<p class="card-text">The solver of Ammonia and water chemical reaction was developed based on
+							OpenFOAM.</p>
 						<button type="button" class="btn btn-primary text-capitalize" data-bs-toggle="modal"
-							data-bs-target="#fsi">
+							data-bs-target="#large">
 							details
 						</button>
 					</div>
 				</div>
 			</div>
-			<aside class="modal fade" id="fsi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-				aria-roledescription="dialog" aria-labelledby="fsiLabel" aria-hidden="true">
+			<aside class="modal fade" id="large" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-roledescription="dialog" aria-labelledby="largeLabel" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" aria-roledescription="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="fsiLabel">Multiphase flow in FSI (fluid structure
-								interaction)</h5>
+							<h5 class="modal-title" id="largeLabel">CFD on Ammonia (NH3) gas dispersion and chemical
+								reaction with water curtain</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body row">
-							<img class="col-6" src="image/propellervof.gif">
-							<img class="col-6" src="image/propellerpar.gif">
-							<p>The multiphase flow solver was developed using C++ for OpenFOAM.</p>
-							<p>This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of
-								fluid).</p>
-							<p>In the animation, the propellor rotates with 158 rad/s; the left is gas-oil-water without
-								particles; the right is gas-oil-water-particle with solid particles.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<img class="col-6" src="image/amma.gif">
+							<img class="col-6" src="image/spray.gif">
+							<p>The Ammonia gas concentration evolution. Left hand side is without water curtain and
+								right hand side is with water curtain</p>
+							<p>The CFD and chemical reaction solver was developed based on OpenFOAM-v2412.</p>
+							<p>The animations show the ammonia gas released from a leak point near the bunkering
+								building. Once the leaking happens, the water spray starts generating a water curtain to
+								capture and absorb Ammonia toxic gas. The following animation shows the water spray
+								absorption processing on Ammonia toxic gas. The following picture shows the Ammonia gas
+								concentration comparisions between with and without water spray curtain.
+							</p>
+							<img class="col-6" src="image/ammw.gif">
+							<img class="col-6" src="image/ammcurve.png">
+							<hr />
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
 						</div>
 					</div>
-				</div>
 			</aside>
 			<!--/.3rd slide-->
 		</section>
@@ -580,116 +587,36 @@
 			<!--9th slide-->
 			<div class="col-md-4 mt-2">
 				<div class="card">
-					<img class="card-img-top" style="width: 100%; height: 400px;" src="image/swnuc.png"
-						alt="super image">
+					<img class="card-img-top" style="width: 100%; height: 400px;" src="image/propellervof.gif"
+						alt="FSI image">
 					<div class="card-body">
-						<h4 class="card-title">Heat transfer of super critical water</h4>
-						<p class="card-text">The user subroutine was developed using Fortran in STAR-CD.</p>
+						<h4 class="card-title">Multiphase flow in FSI</h4>
+						<p class="card-text">The multiphase flow solver was developed using C++ for OpenFOAM.
+						</p>
 						<button type="button" class="btn btn-primary text-capitalize" data-bs-toggle="modal"
-							data-bs-target="#super">
+							data-bs-target="#fsi">
 							details
 						</button>
 					</div>
 				</div>
 			</div>
-			<aside class="modal fade" id="super" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-				aria-roledescription="dialog" aria-labelledby="superLabel" aria-hidden="true">
+			<aside class="modal fade" id="fsi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-roledescription="dialog" aria-labelledby="fsiLabel" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" aria-roledescription="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="superLabel">Heat transfer of super critical water</h5>
+							<h5 class="modal-title" id="fsiLabel">Multiphase flow in FSI (fluid structure
+								interaction)</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body row">
-							<img class="col-6" src="image/swphy.png">
-							<img class="col-6" src="image/swsim.png">
-							<p>The user subroutine was developed for physical properties of super critical water using
-								Fortran in STAR-CD.</p>
-							<p>This user subroutine is able to handle the heat transfer with large change of fluid
-								physical properties.</p>
-							<p>The pictures show the heat transfer component and the entire SCWR (supercritical water
-								reactor).</p>
-							<img class="col-6" src="image/swcyl.png">
-							<img class="col-6" src="image/swnuc.png">
-							<hr />
-							<div>
-								<p>Publication Journals:</p>
-								<ul>
-									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310006187"
-											target="_blank">
-											Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor
-											(SCWR) with horizontal tube bundles. Nuclear Engineering and Design,
-											241(11), 2011, 4427-4433.</a></li>
-									<li><a href="https://www.sciencedirect.com/science/article/pii/S1359431110004473"
-											target="_blank">
-											Zhi Shang, Shuo Chen. Numerical investigation of diameter effect on heat
-											transfer of supercritical water flows in horizontal round tubes. Applied
-											Thermal Engineering, 31(4), 2011, 573-581.</a></li>
-									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310001627"
-											target="_blank">
-											Junli Gou, Zhi Shang, Yuki Ishiwarari, Yoshiaki Oka, Masanori Yamakawa,
-											Satoshi Ikejiri. CFD analysis of heat transfer in subchannels of a super
-											fast reactor. Nuclear Engineering and Design, 240(7), 2010, 1819-1829.</a>
-									</li>
-									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309005615?via%3Dihub"
-											target="_blank">
-											Zhi Shang, Simon Lo. Numerical investigation of supercritical water-cooled
-											nuclear reactor in horizontal tube bundles. Nuclear Engineering and Design,
-											240(4), 2010, 776-782.</a></li>
-									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309003501"
-											target="_blank">
-											Zhi Shang. CFD investigation of vertical rod bundles of supercritical
-											water-cooled nuclear reactor. Nuclear Engineering and Design, 232(2), 2009,
-											157-163.</a>
-									</li>
-									<li><a href="https://www.sciencedirect.com/science/article/pii/S0009250908003060"
-											target="_blank">
-											Zhi Shang, Yufeng Yao, Shuo Chen. Numerical investigation of pressure effect
-											on heat transfer of supercritical water flows in a horizontal round tube.
-											Chemical Engineering Science, 63(16), 2008, 4150-4158.</a></li>
-									<li><a href="https://www.tandfonline.com/doi/abs/10.1080/18811248.2008.9711423"
-											target="_blank">
-											Liangzhi CAO, Yoshiaka OKA, Yuki ISHIWATARI, Zhi SHANG. Fuel, core design
-											and subchannel analysis of a superfast reactor. Journal of Nuclear Science
-											and Technology, 45(2), 2008, 138-148.</a></li>
-								</ul>
-								<p>Publication Conferences:</p>
-								<ul>
-									<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:41133773"
-											target="_blank">
-											Zhi Shang, Charles Moulinec, David R. Emerson, Xiaojun Gu. Investigation of
-											flow and heat transfer of fuel Assembly in Supercritical Water Nuclear
-											Reactor. Technical Meeting on Heat transfer, Thermal-hydraulics and system
-											design for supercritical water cooled reactors, July 5 - 8, 2010, University
-											of Pisa, Pisa, Italy.
-											(<span class="text-success">presentation+article</span>)</a>
-									</li>
-									<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:43105853"
-											target="_blank">
-											Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor
-											(SCWR) with horizontal tube bundles. 13th International Topical Meeting on
-											Nuclear Reactor Thermal Hydraulics (NURETH-13), September 27 - October 2,
-											2009.Kanazawa, Japan. Paper No. N13P1043
-											(<span class="text-success">presentation+article</span>)</a></li>
-									<li>Zhi Shang. Numerical simulation of heat transfer in rod bundles of supercritical
-										water-cooled nuclear reactor (SCWR). 4th International Symposium on
-										Supercritical Water-Cooled Reactors,March 8-11, 2009, Heidelberg, Germany. Paper
-										No.32
-										(<span class="text-success">article</span>)</li>
-									<li><a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1631529"
-											target="_blank">
-											Zhi Shang, Yufeng Yao. CFD investigation of heat transfer in supercritical
-											water-cooled flow through 3×3 fuel rod bundles. Proceedings of the 16th
-											International Conference on Nuclear Engineering (ICONE16), May 11 - 15,
-											2008, Orlando, Florida, USA, ICONE16-84055.
-											(<span class="text-success">presentation+article</span>)</a>
-									</li>
-									<li>Zhi Shang, Yufeng Yao, Simon Lo. Heat transfer of supercritical water-cooled
-										flow in horizontal tube bundles. STAR European Conference 2008, March 17 - 18
-										2008, NOVOTEL, London, UK, Invited Presentation, 18 March 10:10-10:35.
-										(<span class="text-success">presentation</span>)</li>
-								</ul>
-							</div>
+							<img class="col-6" src="image/propellervof.gif">
+							<img class="col-6" src="image/propellerpar.gif">
+							<p>The multiphase flow solver was developed using C++ for OpenFOAM.</p>
+							<p>This solver is able to handle gas-oil-water-particle 4 phase flow with VOF (volume of
+								fluid).</p>
+							<p>In the animation, the propellor rotates with 158 rad/s; the left is gas-oil-water without
+								particles; the right is gas-oil-water-particle with solid particles.</p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -1075,6 +1002,128 @@
 				</div>
 			</aside>
 			<!--/.14th slide-->
+
+			<!--15th slide-->
+			<div class="col-md-4 mt-2">
+				<div class="card">
+					<img class="card-img-top" style="width: 100%; height: 400px;" src="image/swnuc.png"
+						alt="super image">
+					<div class="card-body">
+						<h4 class="card-title">Heat transfer of super critical water</h4>
+						<p class="card-text">The user subroutine was developed using Fortran in STAR-CD.</p>
+						<button type="button" class="btn btn-primary text-capitalize" data-bs-toggle="modal"
+							data-bs-target="#super">
+							details
+						</button>
+					</div>
+				</div>
+			</div>
+			<aside class="modal fade" id="super" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-roledescription="dialog" aria-labelledby="superLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" aria-roledescription="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="superLabel">Heat transfer of super critical water</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body row">
+							<img class="col-6" src="image/swphy.png">
+							<img class="col-6" src="image/swsim.png">
+							<p>The user subroutine was developed for physical properties of super critical water using
+								Fortran in STAR-CD.</p>
+							<p>This user subroutine is able to handle the heat transfer with large change of fluid
+								physical properties.</p>
+							<p>The pictures show the heat transfer component and the entire SCWR (supercritical water
+								reactor).</p>
+							<img class="col-6" src="image/swcyl.png">
+							<img class="col-6" src="image/swnuc.png">
+							<hr />
+							<div>
+								<p>Publication Journals:</p>
+								<ul>
+									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310006187"
+											target="_blank">
+											Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor
+											(SCWR) with horizontal tube bundles. Nuclear Engineering and Design,
+											241(11), 2011, 4427-4433.</a></li>
+									<li><a href="https://www.sciencedirect.com/science/article/pii/S1359431110004473"
+											target="_blank">
+											Zhi Shang, Shuo Chen. Numerical investigation of diameter effect on heat
+											transfer of supercritical water flows in horizontal round tubes. Applied
+											Thermal Engineering, 31(4), 2011, 573-581.</a></li>
+									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549310001627"
+											target="_blank">
+											Junli Gou, Zhi Shang, Yuki Ishiwarari, Yoshiaki Oka, Masanori Yamakawa,
+											Satoshi Ikejiri. CFD analysis of heat transfer in subchannels of a super
+											fast reactor. Nuclear Engineering and Design, 240(7), 2010, 1819-1829.</a>
+									</li>
+									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309005615?via%3Dihub"
+											target="_blank">
+											Zhi Shang, Simon Lo. Numerical investigation of supercritical water-cooled
+											nuclear reactor in horizontal tube bundles. Nuclear Engineering and Design,
+											240(4), 2010, 776-782.</a></li>
+									<li><a href="https://www.sciencedirect.com/science/article/pii/S0029549309003501"
+											target="_blank">
+											Zhi Shang. CFD investigation of vertical rod bundles of supercritical
+											water-cooled nuclear reactor. Nuclear Engineering and Design, 232(2), 2009,
+											157-163.</a>
+									</li>
+									<li><a href="https://www.sciencedirect.com/science/article/pii/S0009250908003060"
+											target="_blank">
+											Zhi Shang, Yufeng Yao, Shuo Chen. Numerical investigation of pressure effect
+											on heat transfer of supercritical water flows in a horizontal round tube.
+											Chemical Engineering Science, 63(16), 2008, 4150-4158.</a></li>
+									<li><a href="https://www.tandfonline.com/doi/abs/10.1080/18811248.2008.9711423"
+											target="_blank">
+											Liangzhi CAO, Yoshiaka OKA, Yuki ISHIWATARI, Zhi SHANG. Fuel, core design
+											and subchannel analysis of a superfast reactor. Journal of Nuclear Science
+											and Technology, 45(2), 2008, 138-148.</a></li>
+								</ul>
+								<p>Publication Conferences:</p>
+								<ul>
+									<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:41133773"
+											target="_blank">
+											Zhi Shang, Charles Moulinec, David R. Emerson, Xiaojun Gu. Investigation of
+											flow and heat transfer of fuel Assembly in Supercritical Water Nuclear
+											Reactor. Technical Meeting on Heat transfer, Thermal-hydraulics and system
+											design for supercritical water cooled reactors, July 5 - 8, 2010, University
+											of Pisa, Pisa, Italy.
+											(<span class="text-success">presentation+article</span>)</a>
+									</li>
+									<li><a href="https://inis.iaea.org/search/search.aspx?orig_q=RN:43105853"
+											target="_blank">
+											Zhi Shang, Simon Lo. CFD in supercritical water-cooled nuclear reactor
+											(SCWR) with horizontal tube bundles. 13th International Topical Meeting on
+											Nuclear Reactor Thermal Hydraulics (NURETH-13), September 27 - October 2,
+											2009.Kanazawa, Japan. Paper No. N13P1043
+											(<span class="text-success">presentation+article</span>)</a></li>
+									<li>Zhi Shang. Numerical simulation of heat transfer in rod bundles of supercritical
+										water-cooled nuclear reactor (SCWR). 4th International Symposium on
+										Supercritical Water-Cooled Reactors,March 8-11, 2009, Heidelberg, Germany. Paper
+										No.32
+										(<span class="text-success">article</span>)</li>
+									<li><a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1631529"
+											target="_blank">
+											Zhi Shang, Yufeng Yao. CFD investigation of heat transfer in supercritical
+											water-cooled flow through 3×3 fuel rod bundles. Proceedings of the 16th
+											International Conference on Nuclear Engineering (ICONE16), May 11 - 15,
+											2008, Orlando, Florida, USA, ICONE16-84055.
+											(<span class="text-success">presentation+article</span>)</a>
+									</li>
+									<li>Zhi Shang, Yufeng Yao, Simon Lo. Heat transfer of supercritical water-cooled
+										flow in horizontal tube bundles. STAR European Conference 2008, March 17 - 18
+										2008, NOVOTEL, London, UK, Invited Presentation, 18 March 10:10-10:35.
+										(<span class="text-success">presentation</span>)</li>
+								</ul>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!--/.15th slide-->
 		</section>
 	</Div>
 </body>
