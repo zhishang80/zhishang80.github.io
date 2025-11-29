@@ -62,6 +62,55 @@
 		</nav>
 		<!--Slides-->
 		<section class="row">
+			<!--3rd slide-->
+			<div class="col-md-4 mt-2">
+				<div class="card">
+					<img class="card-img-top" style="width: 100%; height: 320px;" src="image/panthalassa.gif"
+						alt="Panthalassa floating in sea wave image">
+					<div class="card-body">
+						<h4 class="card-title">CFD simulation on interaction between marine object and ocean wave</h4>
+						<p class="card-text">The overInterDyMFoam + wave mode solver was used in OpenFOAM.</p>
+						<button type="button" class="btn btn-primary text-capitalize" data-bs-toggle="modal"
+							data-bs-target="#panthalassa">
+							details
+						</button>
+					</div>
+				</div>
+			</div>
+			<aside class="modal fade" id="panthalassa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-roledescription="dialog" aria-labelledby="panthalassaLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" aria-roledescription="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="panthalassaLabel">CFD on interaction between marine object and
+								severe ocean wave</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body row">
+							<img class="col-6" src="image/panthalassa.gif">
+							<p>The CFD and wave generation solver was employed based on OpenFOAM-v2412.</p>
+							<p>The six-degrees-of-freedom (6DOF) rigid body library was employed to solve the marine
+								object motion under wave forces. The overset grids technique was use to handle the
+								dynamic mesh around the float object. For stabilizing the marine object, the mooring
+								lines were used to hold for avoiding overturning The MULES (multidimensional universal
+								limiter with explicit solution) algorithm was used to solve the VOF (volume of fluid)
+								Riemann equation.
+							</p>
+							<p>In the animation, the marine object is moving with heave, roll and pitch under the wave.
+								The CFD simulation can help understanding these motions is crucial in marine objects and
+								the operation for stability, safety, and functions.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!--/.3rd slide-->
+		</section>
+
+		<section class="row">
 			<!--1st slide-->
 			<div class="col-md-4 mt-2">
 				<div class="card">
