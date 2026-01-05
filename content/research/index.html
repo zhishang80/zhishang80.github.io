@@ -62,7 +62,7 @@
 		</nav>
 		<!--Slides-->
 		<section class="row">
-			<!--3rd slide-->
+			<!--1st slide-->
 			<div class="col-md-4 mt-2">
 				<div class="card">
 					<img class="card-img-top" style="width: 100%; height: 320px;" src="image/panthalassa.gif"
@@ -108,7 +108,64 @@
 					</div>
 				</div>
 			</aside>
-			<!--/.3rd slide-->
+			<!--/.1st slide-->
+		</section>
+
+		<section class="row">
+			<!--2nd slide-->
+			<div class="col-md-4 mt-2">
+				<div class="card">
+					<img class="card-img-top" style="width: 100%; height: 320px;" src="image/cvd_sic.gif"
+						alt="Panthalassa floating in sea wave image">
+					<div class="card-body">
+						<h4 class="card-title">CFD on chemical vapor deposition (CVD) for SiC coating growth with
+							surface chemical reaction</h4>
+						<p class="card-text">ANSYS Fluent 2025 R1 + OpenFOAM-v2412 was used to perform the CVD
+							simulations.</p>
+						<button type="button" class="btn btn-primary text-capitalize" data-bs-toggle="modal"
+							data-bs-target="#panthalassa">
+							details
+						</button>
+					</div>
+				</div>
+			</div>
+			<aside class="modal fade" id="panthalassa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-roledescription="dialog" aria-labelledby="cvdSiC" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" aria-roledescription="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="cvdSiC">CFD on chemical vapor deposition (CVD) for SiC coating
+								growth with surface chemical reaction</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body row">
+							<img class="col-6" src="image/cvd_mesh.PNG">
+							<img class="col-6" src="image/cvd_substrate.PNG">
+							<p>SiC (Silicon Carbide) coating growth involves advanced deposition techniques like CVD
+								(Chemical Vapor Deposition) to apply hard, heat-resistant layers for enhanced component
+								performance in extreme conditions. The CFD coupled with gas phase and surface chemical
+								reactions including was employed to do the CVD simulations.
+							</p>
+							<p>The CFD and chemical reaction solver was employed based on ANSYS Fluent 2025 R1 and
+								OpenFOAM-v2412 is used to generate the mesh. The methyltrichlorosilane CH3SiCL3 (MTS)
+								with hydrogen H2 system was used in the SiC-CVD process. The corresponding chemical
+								reactions as gas phase: CH3SiCL3 pyrolysis as 0.5C2H2 + 0.5H2 + HCL + SiCL2 and CH3SiCL3
+								+ H2 combination as CH4 + HCL + SiCL2, and solid surface: C2H2 + 2SiCL2 + H2 combination
+								as 2SiC (solid) + 4HCL. In the simulation, the system pressure is under 10000 Pa and
+								1002.15 K. The substrate temperature is 1200 K.
+							</p>
+							<p>In the animation, the SiC gradually covers the substrate surface and growths. The CFD
+								simulation can help understanding these SiC coating process and the operation systems
+								(pressure and temperature), parameters and influencing factors.
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!--/.2nd slide-->
 		</section>
 
 		<section class="row">
