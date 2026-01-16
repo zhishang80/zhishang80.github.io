@@ -116,7 +116,7 @@
 					<img class="card-img-top" style="width: 100%; height: 320px;" src="image/cvd_sic.gif"
 						alt="CVD coasting on substrate surface">
 					<div class="card-body">
-						<h4 class="card-title">CFD on chemical vapor deposition (CVD) for SiC coating growth with
+						<h4 class="card-title">LES on chemical vapor deposition (CVD) for SiC coating growth with
 							surface chemical reaction</h4>
 						<p class="card-text">ANSYS Fluent 2025 R1 + OpenFOAM-v2412 was used to perform the CVD
 							simulations.</p>
@@ -132,8 +132,9 @@
 				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" aria-roledescription="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="cvdSiCLabel">CFD on chemical vapor deposition (CVD) for SiC
-								coating growth with surface chemical reaction</h5>
+							<h5 class="modal-title" id="cvdSiCLabel">CFD using large eddy simulation (LES) on chemical
+								vapor deposition (CVD) for SiC coating growth with surface chemical reaction in a hot
+								wall reactor</h5>
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body row">
@@ -144,13 +145,13 @@
 								performance in extreme conditions. The CFD coupled with gas phase and surface chemical
 								reactions including was employed to do the CVD simulations.
 							</p>
-							<p>The CFD and chemical reaction solver was employed based on ANSYS Fluent 2025 R1 and
-								OpenFOAM-v2412 is used to generate the mesh. The methyltrichlorosilane CH3SiCL3 (MTS)
-								with hydrogen H2 system was used in the SiC-CVD process. The corresponding chemical
-								reactions as gas phase: CH3SiCL3 pyrolysis as 0.5C2H2 + 0.5H2 + HCL + SiCL2 and CH3SiCL3
-								+ H2 combination as CH4 + HCL + SiCL2, and solid surface: C2H2 + 2SiCL2 + H2 combination
-								as 2SiC (solid) + 4HCL. In the simulation, the system pressure is under 10000 Pa and
-								1002.15 K. The substrate temperature is 1200 K.
+							<p>The CFD with LES and chemical reaction solver was employed based on ANSYS Fluent 2025 R1
+								and OpenFOAM-v2412 is used to generate the mesh. The methyltrichlorosilane CH3SiCL3
+								(MTS) with hydrogen H2 system was used in the SiC-CVD process. The corresponding
+								chemical reactions as gas phase: CH3SiCL3 -> 0.5C2H2 + 0.5H2 + HCL + SiCL2 and CH3SiCL3
+								+ H2 -> CH4 + HCL + SiCL2, and wafer solid surface: C2H2 + 2SiCL2 + H2 -> 2SiC (solid) +
+								4HCL. In the simulation, the system pressure is under 10000 Pa and 1002.15 K.
+								The wafer surface temperature is 1200 K.
 							</p>
 							<p>In the animation, the SiC gradually covers the substrate surface and growths. The CFD
 								simulation can help understanding these SiC coating process and the operation systems
